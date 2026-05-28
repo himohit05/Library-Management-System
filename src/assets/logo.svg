@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Sky gradient -->
+    <radialGradient id="skyGrad" cx="50%" cy="70%" r="70%">
+      <stop offset="0%" stop-color="#FFE0A0"/>
+      <stop offset="50%" stop-color="#FFBD6E"/>
+      <stop offset="100%" stop-color="#FFF4E0"/>
+    </radialGradient>
+
+    <!-- Sunrise glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD84D" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#FFAA33" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFAA33" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Book gradient -->
+    <linearGradient id="bookLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8864A"/>
+      <stop offset="100%" stop-color="#E5A96A"/>
+    </linearGradient>
+    <linearGradient id="bookRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A96A"/>
+      <stop offset="100%" stop-color="#C8864A"/>
+    </linearGradient>
+
+    <!-- Tree gradient -->
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6DBF7E"/>
+      <stop offset="100%" stop-color="#4A9E5C"/>
+    </linearGradient>
+
+    <!-- Circle clip -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="175"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer rings -->
+  
+  <circle cx="200" cy="200" r="178" fill="none" stroke="#E8C080" stroke-width="1" opacity="0.3"/>
+  <circle cx="200" cy="200" r="175" fill="url(#skyGrad)"/>
+
+  <!-- Logo content -->
+  <g clip-path="url(#circleClip)" transform="translate(0,-10)">
+
+    <!-- Ground -->
+    <ellipse cx="200" cy="310" rx="160" ry="30" fill="#C89A5A" opacity="0.25"/>
+    <rect x="30" y="295" width="340" height="90" fill="#C89A5A" opacity="0.18" rx="4"/>
+    <g transform="translate(-20,-90) scale(1.2)">
+    <!-- Sun glow halo -->
+    <circle cx="200" cy="200" r="90" fill="url(#sunGlow)" opacity="0.55"/>
+
+    <!-- Sun semicircle -->
+    <path d="M 148 232 A 52 52 0 0 1 252 232 Z" fill="#FFD050" opacity="0.95"/>
+    <path d="M 152 232 A 48 48 0 0 1 248 232 Z" fill="#FFE080" opacity="0.6"/>
+
+    <!-- TREE -->
+    <rect x="96" y="255" width="12" height="42" rx="4" fill="#A0703A"/>
+    <ellipse cx="102" cy="235" rx="30" ry="22" fill="url(#treeGrad)" opacity="0.95"/>
+    <ellipse cx="102" cy="218" rx="22" ry="18" fill="#7DCF8E" opacity="0.95"/>
+    <ellipse cx="102" cy="204" rx="15" ry="13" fill="#9EDB88" opacity="0.9"/>
+    <circle cx="88" cy="228" r="9" fill="#6DBF7E" opacity="0.8"/>
+    <circle cx="116" cy="228" r="9" fill="#5BAE6C" opacity="0.8"/>
+    <circle cx="95" cy="210" r="7" fill="#8ED87E" opacity="0.7"/>
+
+    <!-- OPEN BOOK -->
+    <ellipse cx="202" cy="298" rx="68" ry="8" fill="#A07840" opacity="0.18"/>
+    <path d="M 200 230 Q 170 222 138 228 L 134 285 Q 166 278 200 288 Z"
+          fill="url(#bookLeft)" stroke="#B87040" stroke-width="1.5" stroke-linejoin="round"/>
+    <g stroke="#FFF0DC" stroke-width="1.2" opacity="0.6" stroke-linecap="round">
+      <line x1="150" y1="244" x2="190" y2="245"/>
+      <line x1="148" y1="253" x2="188" y2="255"/>
+      <line x1="146" y1="262" x2="187" y2="264"/>
+      <line x1="145" y1="271" x2="186" y2="273"/>
+    </g>
+    <path d="M 200 230 Q 230 222 262 228 L 266 285 Q 234 278 200 288 Z"
+          fill="url(#bookRight)" stroke="#B87040" stroke-width="1.5" stroke-linejoin="round"/>
+    <g stroke="#FFF0DC" stroke-width="1.2" opacity="0.6" stroke-linecap="round">
+      <line x1="210" y1="245" x2="250" y2="244"/>
+      <line x1="212" y1="255" x2="252" y2="253"/>
+      <line x1="213" y1="264" x2="254" y2="262"/>
+      <line x1="214" y1="273" x2="255" y2="271"/>
+    </g>
+    <path d="M 200 230 Q 200 258 200 288" stroke="#8B5A2A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 132 284 Q 166 276 200 286 Q 234 276 268 284 L 268 292 Q 234 284 200 294 Q 166 284 132 292 Z"
+          fill="#A06030" opacity="0.85"/>
+          
+        </g>
+
+    <!-- BIRDS -->
+    <path d="M 258 158 Q 263 153 268 158 Q 273 153 278 158" fill="none" stroke="#8B5A2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 270 143 Q 275 138 280 143 Q 285 138 290 143" fill="none" stroke="#8B5A2A" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 252 135 Q 256 131 260 135 Q 264 131 268 135" fill="none" stroke="#8B5A2A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 128 148 Q 133 144 138 148 Q 143 144 148 148" fill="none" stroke="#8B5A2A" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 138 133 Q 142 130 146 133 Q 150 130 154 133" fill="none" stroke="#A07840" stroke-width="1.3" stroke-linecap="round"/>
+    
+
+
+    <!-- Border inner circle -->
+    <circle cx="200" cy="200" r="175" fill="none" stroke="#D4944A" stroke-width="2" opacity="0.35"/>
+  </g>
+
+
+
+  <!-- Sanskrit text below book/tree, inside circle -->
+  <text x="200" y="315"
+        font-family="'Noto Serif Devanagari', 'Noto Sans Devanagari', 'Mangal', serif"
+        font-size="35"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#A0703A"
+        letter-spacing="1.2">
+    ज्ञानं परमं ध्येयम्
+  </text>
+</svg>
